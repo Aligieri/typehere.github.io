@@ -92,7 +92,12 @@
             <img src="Screenshot1.png" alt="Screenshot1" class="screenshot-small">
             <img src="Screenshot2.png" alt="Screenshot2" class="screenshot-large">
         </div>
-        
+
+        <h2>Launch on ARM chips</h2>
+        <p>In case of getting an error during launch, execute commands one by one to self sign app:</p>
+        <p>xattr -cr /Applications/TypeHere.app</p>
+        <p>sudo codesign --force --deep --sign - /Applications/TypeHere.app</p>
+
         <h2>Download</h2>
         <ul class="download-links">
             <li><a href="https://github.com/Aligieri/TypeHere/releases/download/v.1.0.0/TypeHere.app.zip">Download for macOS (Intel chip)</a></li>
