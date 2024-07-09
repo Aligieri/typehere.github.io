@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeHere</title>
-     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,6 +15,7 @@
             align-items: center;
             background-color: #f0f0f0;
             color: #333;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -30,6 +31,7 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            flex: 1;
         }
         .screenshots {
             display: flex;
@@ -73,7 +75,7 @@
             padding: 10px;
             width: 100%;
             text-align: center;
-            position: fixed;
+            position: relative;
             bottom: 0;
         }
     </style>
@@ -93,10 +95,10 @@
             <img src="Screenshot2.png" alt="Screenshot2" class="screenshot-large">
         </div>
 
-        <h2>Launch on ARM chips</h2>
+        <h2>Launch on Apple chips</h2>
         <p>In case of getting an error during launch, execute commands one by one to self sign app:</p>
-        <p>xattr -cr /Applications/TypeHere.app</p>
-        <p>sudo codesign --force --deep --sign - /Applications/TypeHere.app</p>
+        <code>xattr -cr /Applications/TypeHere.app<br>
+        sudo codesign --force --deep --sign - /Applications/TypeHere.app</code>
 
         <h2>Download</h2>
         <ul class="download-links">
